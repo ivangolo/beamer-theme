@@ -23,7 +23,7 @@ tex: $(OUT)
 pandoc:
 	@echo -n "Compiling $(PANDOC_SRC) to $(PANDOC_OUT)... "
 	@pandoc $(PANDOC_SRC) -t beamer -s -o $(PANDOC_OUT) --smart \
-	-V theme:guadec -V classoption:aspectratio=169 --slide-level 2 --highlight-style kate
+	-V theme:guadec -V classoption:aspectratio=169 --slide-level 2 --highlight-style kate --filter pandoc-citeproc
 	@echo "Done!"
 
 continuous: pandoc
@@ -37,4 +37,3 @@ clean:
 	rm -Rf $(OUT) $(PANDOC_OUT) $(BYPRODUCTS)
 
 .PHONY: all clean
-

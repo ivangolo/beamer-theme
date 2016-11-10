@@ -1,17 +1,22 @@
-% How to use Pandoc for creating awesome slides for GUADEC 2015
-% Lasse Schuirmann (`lasse.schuirmann@gmail.com`)
-% August 7, 2015
+---
+title: Predicción de la concentración de ozono troposférico
+subtitle: Estado del Arte
+author: Iván González
+email: ivan.gonzalezlo@alumnos.usm.cl
+institute: Universidad Técnica Federico Santa Maríar
+bibliography: bibliography.bib
+date: 3 de Noviembre de 2016
+---
 
 # Title Slide
 
 Any text under a header 1 won't be shown. This is a title slide without
 content!
 
----
+
 
 ![Evaluation of a Code Clone Detection](graph.png)
 
----
 
 <!-- Leave the alternative text empty and add a backslash *plus a trailing space
 or an extra newline* to get no image caption at all -->
@@ -47,4 +52,12 @@ def some_code(is_easy_to):
 
 ## Compiling
 
-Simply use `make pandoc` in this directory!
+# Bibliography
+
+## Citation example
+
+See @hiermann2016electric.
+
+## Referencias
+
+<!-- Simply use `make pandoc` in this directory! -->
