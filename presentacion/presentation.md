@@ -1,13 +1,3 @@
----
-title: Predicción de la concentración de ozono troposférico
-subtitle: Estado del Arte
-author: Iván González
-email: ivan.gonzalezlo@alumnos.usm.cl
-institute: Universidad Técnica Federico Santa Maríar
-bibliography: bibliography.bib
-date: 3 de Noviembre de 2016
----
-
 # Title Slide
 
 Any text under a header 1 won't be shown. This is a title slide without
@@ -15,12 +5,9 @@ content!
 
 
 
-![Evaluation of a Code Clone Detection](graph.png)
-
-
 <!-- Leave the alternative text empty and add a backslash *plus a trailing space
 or an extra newline* to get no image caption at all -->
-![](graph.png)\
+<!-- ![](graph.png)\ -->
 
 
 ## Content Slide
@@ -59,5 +46,5 @@ def some_code(is_easy_to):
 See @hiermann2016electric.
 
 ## Referencias
-
+\tiny
 <!-- Simply use `make pandoc` in this directory! -->

@@ -2,6 +2,8 @@ NULL =
 
 SRC = guadec-example.tex
 PANDOC_SRC = presentation.md
+BEAMER_TEMPLATE = template/default.beamer
+CONFIG_FILE = config.yaml
 
 OUT = $(SRC:%.tex=%.pdf)
 PANDOC_OUT = $(PANDOC_SRC:%.md=%.pdf)
@@ -22,8 +24,8 @@ tex: $(OUT)
 
 pandoc:
 	@echo -n "Compiling $(PANDOC_SRC) to $(PANDOC_OUT)... "
-	@pandoc $(PANDOC_SRC) -t beamer -s -o $(PANDOC_OUT) --smart \
-	-V theme:guadec -V classoption:aspectratio=169 --slide-level 2 --highlight-style kate --filter pandoc-citeproc
+	@pandoc $(PANDOC_SRC) -t beamer -s --template=$(BEAMER_TEMPLATE) -o $(PANDOC_OUT) --smart \
+    --slide-level 2 --highlight-style kate --filter pandoc-citeproc $(CONFIG_FILE)
 	@echo "Done!"
 
 continuous: pandoc

@@ -10,14 +10,11 @@
       \node[inner sep=0pt][anchor=south] at (0.5\paperwidth, 0) {
         \includegraphics[width=2\paperheight,height=\paperheight,keepaspectratio]{guadec-background}};
 
-    %   The footer
-    %   \node[inner sep=0pt][anchor=south] at (0.5\paperwidth, 6mm) {
-    %     \includegraphics[height=0.14\paperheight]{guadec-gothenburg-white}};
       \fill[color=white] (0, 0) rectangle (\the\paperwidth, 6mm);
 
       % The footer's content
       \node[anchor=west] at (0, 3mm) {
-        \textcolor{guadecblue}{\tiny{\hskip6mm\insertdate}}};
+        \textcolor{guadecblue}{\tiny{\hskip6mm\course}}};
       \node[anchor=east] at (\paperwidth, 3mm) {
         \textcolor{guadecblue}{\tiny{\insertinstitute\hskip6mm\hfill}}};
     \fi
@@ -29,7 +26,7 @@
 
       % The footer's content
       \node[anchor=west] at (0, 3mm) {
-        \textcolor{guadeclightgrey}{\tiny{\hskip6mm\insertshorttitle}}};
+        \textcolor{guadeclightgrey}{\tiny{\hskip6mm\insertauthor}}};
       \node[anchor=east] at (\paperwidth, 3mm) {
         \textcolor{guadeclightgrey}{\tiny{\thepage\hskip6mm\hfill}}};
     \fi
@@ -42,7 +39,7 @@
   % \includegraphics[width=0.672\paperheight,height=0.21\paperheight,keepaspectratio]{guadec-logo}
   % \vskip6mm%
   \hfill
-  \begin{beamercolorbox}[wd=0.66\paperwidth, center, sep=6pt, #1]{title page header}
+  \begin{beamercolorbox}[wd=0.9\paperwidth, center, sep=6pt, #1]{title page header}
     \usebeamerfont{title}\inserttitle\par%
   \end{beamercolorbox}%
   \hfill\hfill\par%
@@ -55,7 +52,11 @@
   \begin{beamercolorbox}[center]{author}
     \usebeamerfont{author}\insertauthor%
   \end{beamercolorbox}
-  \vfill
+  \vskip6mm%
+  \begin{beamercolorbox}[center]{author}
+    \usebeamerfont{author}\insertdate%
+  \end{beamercolorbox}
+  \vfill%
 }
 
 \mode

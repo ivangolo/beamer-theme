@@ -1,0 +1,15 @@
+---
+title: Título principal
+subtitle: Subtítulo
+author: Nombre del autor
+email: email del autor
+institute: Universidad Técnica Federico Santa María
+bibliography: bibliography.bib
+date: \today
+course: Asignatura
+theme: guadec
+classoption: aspectratio=169
+header-includes:
+    - \usepackage[natbibapa]{apacite}
+    - \usepackage[spanish, es-tabla]{babel}
+---
