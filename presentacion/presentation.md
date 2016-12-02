@@ -43,8 +43,9 @@ def some_code(is_easy_to):
 
 ## Citation example
 
-See @hiermann2016electric.
+See @hiermann2016electric, @ha2015enhanced, @biancofiore2015analysis, @luna2014prediction, @ozbay2011predicting, @coman2008hourly, @salazar2008development, @al2008combining, @sousa2007multiple, @abdul2005principal.
 
-## Referencias
-\tiny
+
+## Referencias {.allowframebreaks}
+\scriptsize
 <!-- Simply use `make pandoc` in this directory! -->

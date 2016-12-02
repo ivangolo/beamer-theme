@@ -4,12 +4,19 @@ subtitle: Subtítulo
 author: Nombre del autor
 email: email del autor
 institute: Universidad Técnica Federico Santa María
-bibliography: bibliography.bib
-date: \today
+professor: Profesor
 course: Asignatura
+other_langs: en
+bibliography: bibliography.bib
+biblio-style: "apalike"
+biblio-title: Referencias
+date: \today
 theme: guadec
 classoption: aspectratio=169
 header-includes:
-    - \usepackage[natbibapa]{apacite}
+    - \widowpenalties 1 150
     - \usepackage[spanish, es-tabla]{babel}
+output:
+  beamer_presentation:
+      citation_package: natbib
 ---
