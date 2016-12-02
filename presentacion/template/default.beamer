@@ -233,6 +233,9 @@ $endif$
 $if(email)$
 \newcommand{\email}{\href{mailto:$email$}{\nolinkurl{$email$}}}
 $endif$
+$if(professor)$
+\newcommand{\professor}{$professor$}
+$endif$
 
 \begin{document}
 $if(title)$
