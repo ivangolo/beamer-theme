@@ -1,15 +1,5 @@
 # Title Slide
 
-Any text under a header 1 won't be shown. This is a title slide without
-content!
-
-
-
-<!-- Leave the alternative text empty and add a backslash *plus a trailing space
-or an extra newline* to get no image caption at all -->
-<!-- ![](graph.png)\ -->
-
-
 ## Content Slide
 
 Do math simply!
